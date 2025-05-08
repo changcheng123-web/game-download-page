@@ -11,12 +11,13 @@
     body {
       margin: 0;
       font-family: "Helvetica Neue", sans-serif;
-      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
       text-align: center;
     }
     .header {
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.8);
       padding: 40px 20px 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
@@ -29,7 +30,7 @@
       padding: 40px 20px;
     }
     .card {
-      background: white;
+      background: rgba(255, 255, 255, 0.9);
       max-width: 600px;
       margin: 0 auto;
       border-radius: 12px;
@@ -47,7 +48,7 @@
     }
     .download-btn {
       display: inline-block;
-      margin-top: 25px;
+      margin: 10px 10px 0;
       padding: 14px 30px;
       background: #28a745;
       color: white;
@@ -58,6 +59,12 @@
     }
     .download-btn:hover {
       background: #218838;
+    }
+    .ios-btn {
+      background: #007aff;
+    }
+    .ios-btn:hover {
+      background: #0051c7;
     }
     .footer {
       margin-top: 50px;
@@ -70,20 +77,27 @@
 
   <div class="header">
     <h1>欢乐牌局</h1>
-    <p>扫码添加 Telegram 帅哥客服获取下载链接</p>
+    <p>扫码添加 Telegram 客服获取下载链接</p>
   </div>
 
   <div class="container">
     <div class="card">
-      <img src="https://raw.githubusercontent.com/changcheng123-web/game-download-page/main/qr.png" alt="Telegram 客服二维码">
-      <p>添加客服 @JIU126999，即可获取最新下载方式</p>
-      <a class="download-btn" href="https://t.me/JIU126999" target="_blank">打开 Telegram 添加</a>
+      <img src="照片_2025-05-08_14-23-06.jpg" alt="Telegram 客服二维码">
+      <p>请添加官方客服 <strong>@JIU126999</strong> 获取最新下载方式</p>
+      <a class="download-btn" href="https://example.com/android.apk" target="_blank">下载 Android</a>
+      <a class="download-btn ios-btn" href="https://example.com/ios" target="_blank">下载 iOS</a>
     </div>
 
     <div class="footer">
-      © 2025 欢乐牌局 | Telegram 客服：@JIU126999
+      © 2025 欢乐牌局 | 客服 Telegram：@JIU126999
     </div>
   </div>
+
+  <!-- 背景音乐 -->
+  <audio autoplay loop>
+    <source src="background.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
 
 </body>
 </html>
